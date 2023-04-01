@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "MAS": "vue-cli-service serve",
+    "mas-project": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "aaxios": "^0.18.1",
+    "axios": "^1.3.4",
     "core-js": "^3.8.3",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuetify": "^3.0.0-beta.0",
-    "webfontloader": "^1.0.0"
+    "vuex": "^4.1.0",
+    "webfontloader": "^1.0.0",
+    "webpack": "^5.76.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

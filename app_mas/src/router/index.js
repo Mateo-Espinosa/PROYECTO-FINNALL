@@ -1,38 +1,64 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import infoView from '@/views/infoView.vue'
+
+import Favoritos from '@/views/juegosFavoritos.vue'
 import mainView from '@/views/mainView.vue'
-import helpView from '@/views/helpView.vue'
-import aboutView from '@/views/AboutView.vue'
-import contactView from '@/views/contactView.vue'
+import perfilUsuario from '@/views/perfilUsuario.vue'
+import loginView from '@/views/loginView.vue'
+import contactoView from '@/views/contacView.vue'
+import cerrarsesion from '@/views/cerrarSesionView.vue'
+import tiendaView from "@/views/tiendaView.vue"
+import carritoView from "@/views/carritoView.vue"
 
 const routes = [
-  {
-    path: '/info',
-    name: 'info',
-    component: infoView
-  },
+  
   {
     path: '/',
+    name: 'login',
+    component: loginView
+  },
+  {
+    path: '/principal',
     name: 'main',
-    component: mainView
+    component: mainView,
+    meta: {
+      title: 'Inicio'
+    }
+  },
+
+  {
+    path: '/favoritos',
+  name: 'Favoritos',
+  component: Favoritos,
+  props: (route) => ({ favoritos: route.query.favoritos })
   },
   {
-    path: '/help',
-    name: 'help',
-    component: helpView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: aboutView
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: contactView
-  }
+  path: '/perfil',
+  name: 'perfil',
+  component: perfilUsuario
+},
+{
+  path: '/contacto',
+  name: 'contacto',
+  component: contactoView
+},
+{
+  path: '/cerrar',
+  name: 'cerrar',
+  component: cerrarsesion
+},
+{
+  path: '/tienda',
+  name: 'tienda',
+  component: tiendaView
+},
+{
+  path: '/carrito',
+  name: 'carrito',
+  component: carritoView
+},
 
 ]
+  
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
