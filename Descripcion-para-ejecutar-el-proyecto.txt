@@ -1,0 +1,24 @@
+Profe el proyecto esta subido sin la carpeta node_modules por problemas de rendimiento y espacio. pero si esta montado el packages.json.
+
+
+para ejecutar la web
+Solo en la consola ejecuta cd app_mas y despues npm install y se bajaran todas las dependencias necesarias, para ejecutar el proyecto vue/cli es 
+npm run mas-project.
+
+para ejecutar el servidor
+Solo en la consola ejecuta cd app_mas/src/servidor despues npm install
+para bajar sus dependencias necesarias.
+el servidor se ejecuta npm run servidor.
+
+
+TABLA QUE USAMOS EN LA BASE DE DATOS:
+
+CREATE TABLE nombre_de_la_tabla (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  nombre varchar(50) NOT NULL,
+  correo varchar(50) NOT NULL,
+  contrasena varchar(50) NOT NULL,
+  edad text NOT NULL,
+  plataformas text NOT NULL,
+  PRIMARY KEY (id)
+) 
