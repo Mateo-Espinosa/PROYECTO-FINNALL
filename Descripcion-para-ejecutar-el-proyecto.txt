@@ -2,11 +2,11 @@ Profe el proyecto esta subido sin la carpeta node_modules por problemas de rendi
 
 
 para ejecutar la web
-Solo en la consola ejecuta cd app_mas y despues npm install y se bajaran todas las dependencias necesarias, para ejecutar el proyecto vue/cli es 
+Solo en la consola ejecuta  cd PROYECTO-FINNALL-main/app_mas y despues npm install y se bajaran todas las dependencias necesarias, para ejecutar el proyecto vue/cli es 
 npm run mas-project.
 
 para ejecutar el servidor
-Solo en la consola ejecuta cd app_mas/src/servidor despues npm install
+Solo en la consola ejecuta cd PROYECTO-FINNALL-main/app_mas/src/servidor despues npm install
 para bajar sus dependencias necesarias.
 el servidor se ejecuta npm run servidor.
 
