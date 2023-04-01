@@ -702,7 +702,7 @@ this.cards.forEach(card => {
       }
     .fondo-pagin {
       background-color: black;
-      background: url('../assets/5.gif');
+      background: url('../assets/5.png');
       background-size: cover;
       height: 100vh;
     }

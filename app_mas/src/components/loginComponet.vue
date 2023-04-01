@@ -134,12 +134,12 @@
 }   
 .hero {
         background-color: black;
-        background: url('../assets/retro.gif');
+        background: url('../assets/retro.png');
         background-size: cover;
         height: 100vh;
       }
       .fondo-form {
-        background: url('../assets/retro.gif');
+        background: url('../assets/retro.png');
         background-size: cover;
         height: 62vh;
         background-position: 50%;
